@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Miltonian+Tattoo">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <h1>HORTICURITA</h1>
+        </div>
+        <div>
+            <button onclick="showList()"><img src="menu.svg"></button>
+            <ul class="listProducts">
+
+                <li><a>INICIO</a></li>
+                <li>
+                    <button onclick="showProductsList()" class="displayButtonsProds">PRODUCTOS <img src="arrowMenu.png" style="
+                        width: 15px;
+                        margin-left: 5px;
+                    "></button>
+                    <ul class="ulProducts">
+                        <li><a>Todos los productos</a></li>
+                        <li>
+                            <button onclick="showFruitsList()" class="displayButtonsProds">Frutas<img src="arrowMenu.png" style="
+                                width: 15px;
+                                margin-left: 5px;
+                            "></button>
+                            <ul class="ulFruits">
+                                <li><a>Cerezas y picotas</a></li>
+                                <li><a>Platanos</a></li>
+                                <li><a>Piñas</a></li>
+                                <li><a>Peras</a></li>
+                                <li><a>Naranjas</a></li>
+                                <li><a>Melones y sandias</a></li>
+                                <li><a>Peras</a></li>
+                                <li><a>Melocotones y ciruelas</a></li>
+                                <li><a>Manzanas</a></li>
+                                <li><a>Limas y limones</a></li>
+                                <li><a>Kiwis</a></li>
+                                <li><a>Frutas del bosque</a></li>
+                                <li><a>Uvas</a></li>
+                                <li><a>Otras frutas</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Verduras y hortalizas</a></li>
+                        <li><a>Legumbres</a></li>
+                        <li><a>Frutos secos</a></li>
+                        <li><a>Encurtidos</a></li>
+                        <li><a>Miel</a></li>
+                    </ul>
+                </li>
+                <li><a>FRUTA PARA OFICINA</a></li>
+                <li><a>CONTACTO</a></li>
+
+                <li><a>CARRITO</a></li>
+            </ul>
+        </div>
+        <div>
+            <button onclick="showList()" class="buttonCart"><img src="carritoIcons.png">
+                ( 0 )
+            </button>
+        </div>
+    </nav>
+    <script src="nav.js"></script>
+</body>
+
+</html>

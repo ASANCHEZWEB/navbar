@@ -1,5 +1,4 @@
 function showList() {
-    
   document.querySelector(".listProducts").classList.toggle("showList");
   if (
     document
@@ -17,20 +16,21 @@ function showList() {
 }
 
 function showProductsList() {
-
-    if(document.querySelector(".ulProducts")){
-        document.querySelector(".ulProducts").setAttribute('class', 'showUlProducts')
-    }else{
-        document.querySelector(".showUlProducts").setAttribute('class', 'ulProducts')
-    }
-  
+  if (document.querySelector(".ulProducts")) {
+    document
+      .querySelector(".ulProducts")
+      .setAttribute("class", "showUlProducts");
+  } else {
+    document
+      .querySelector(".showUlProducts")
+      .setAttribute("class", "ulProducts");
+  }
 }
 
-
-function showFruitsList(){
-    if(document.querySelector(".ulFruits")){
-        document.querySelector(".ulFruits").setAttribute('class', 'showfruits')
-    }else{
-        document.querySelector(".showfruits").setAttribute('class', 'ulFruits')
-    }
+function showFruitsList() {
+  if (document.querySelector(".ulFruits")) {
+    document.querySelector(".ulFruits").setAttribute("class", "showfruits");
+  } else {
+    document.querySelector(".showfruits").setAttribute("class", "ulFruits");
+  }
 }

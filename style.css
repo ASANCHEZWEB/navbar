@@ -84,6 +84,9 @@ h1 {
     .showfruits>li {
        margin-top:10px
     }
+    .showfruits>li>a>img{
+        width: 22px;
+    }
     .displayButtonsProds {
         border: none;
         background: none;

@@ -17,12 +17,16 @@ function showList() {
   }
 }
 //AJUSTAR TAMAÑO DE LA VENTANA OVERFLOW DEL MENÚ
-const sizePantalla=window.innerHeight;
-const screenSize=document.querySelector('.listProducts').style.height = `${sizePantalla-(window.innerHeight*0.19)}px`;
 
-if(window.innerHeight!==sizePantalla){
-  alert("funciona")
-}
+setInterval(function () {
+  //coger el tamaño de la pantalla
+  let tamanoPantalla = window.innerHeight;
+  //cambiar el tamaño de la caja de listado del menu
+  document.querySelector(".listProducts").style.height = `${
+    tamanoPantalla - window.innerHeight * 0.19
+  }px`;
+}, 3000);
+
 //MOSTRAR LISTA DE PRODUCTOS
 function showProductsList() {
   if (document.querySelector(".ulProducts")) {
@@ -36,9 +40,9 @@ function showProductsList() {
   }
 }
 
-//MOSTRAR LISTA DE FRUTAS 
+//MOSTRAR LISTA DE FRUTAS
 function showFruitsList() {
-  if(document.querySelector(".showVerduras")){
+  if (document.querySelector(".showVerduras")) {
     document.querySelector(".showVerduras").setAttribute("class", "ulVerduras");
   }
   if (document.querySelector(".ulFruits")) {
@@ -48,9 +52,9 @@ function showFruitsList() {
   }
 }
 
-//MOSTRAR LISTA DE VERDURAS 
+//MOSTRAR LISTA DE VERDURAS
 function showVerduras() {
-  if(document.querySelector(".showfruits")){
+  if (document.querySelector(".showfruits")) {
     document.querySelector(".showfruits").setAttribute("class", "ulFruits");
   }
   if (document.querySelector(".ulVerduras")) {

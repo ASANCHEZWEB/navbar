@@ -16,6 +16,8 @@ function showList() {
       .setAttribute("src", "menu.svg");
   }
 }
+//AJUSTAR TAMAÑO DE LA VENTANA OVERFLOW DLE MENÚ
+document.querySelector('.listProducts').style.height = `${screen.height+67}px`;
 
 //MOSTRAR LISTA DE PRODUCTOS
 function showProductsList() {

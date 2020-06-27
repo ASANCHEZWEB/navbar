@@ -103,7 +103,7 @@ h1 {
     .showfruits>li>a>img {
         width: 22px;
     }
-    
+
     /* ESTILO PARA LOS BOTONES DE DROPDOWN DEL MENÚ */
     .displayButtonsProds {
         border: none;
@@ -127,10 +127,30 @@ h1 {
         list-style: none;
         padding-top: 10px;
     }
+
     /* AJUSTAR TAMAÑO ICONOS VERDURA */
     .showVerduras>li>a>img {
         width: 22px;
     }
+
+    /* CSS CARRITO DENTRO DE MENÚ */
+
+    .cartStyleLI {
+        border-top-color: #33ff0057;
+        border-top-style: solid;
+        padding-top: 11px;
+        margin-top: 8px;
+    }
+
+    .cartStyleLI>a {
+        display: flex;
+        align-items: center;
+    }
+
+    .cartStyleLI>a>img {
+        width: 40px;
+    }
+
     /* POSICIONES DE LOS 3 DIVS DEL NAV */
     nav>div:nth-child(1) {
         order: 2

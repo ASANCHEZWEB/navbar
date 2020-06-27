@@ -34,6 +34,9 @@ function showProductsList() {
 
 //MOSTRAR LISTA DE FRUTAS 
 function showFruitsList() {
+  if(document.querySelector(".showVerduras")){
+    document.querySelector(".showVerduras").setAttribute("class", "ulVerduras");
+  }
   if (document.querySelector(".ulFruits")) {
     document.querySelector(".ulFruits").setAttribute("class", "showfruits");
   } else {
@@ -43,6 +46,9 @@ function showFruitsList() {
 
 //MOSTRAR LISTA DE VERDURAS 
 function showVerduras() {
+  if(document.querySelector(".showfruits")){
+    document.querySelector(".showfruits").setAttribute("class", "ulFruits");
+  }
   if (document.querySelector(".ulVerduras")) {
     document.querySelector(".ulVerduras").setAttribute("class", "showVerduras");
   } else {

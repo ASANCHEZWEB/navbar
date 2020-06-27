@@ -17,8 +17,12 @@ function showList() {
   }
 }
 //AJUSTAR TAMAÑO DE LA VENTANA OVERFLOW DEL MENÚ
-document.querySelector('.listProducts').style.height = `${window.innerHeight-(window.innerHeight*0.19)}px`;
+const sizeScreen = window.innerHeight;
+ let sizeNavBar = document.querySelector('.listProducts').style.height = `${sizeScreen-(window.innerHeight*0.19)}px`;
 
+if(window.innerHeight!==sizeScreen){
+  document.querySelector('.listProducts').style.height = `${window.innerHeight-(window.innerHeight*0.19)}px`;
+}
 //MOSTRAR LISTA DE PRODUCTOS
 function showProductsList() {
   if (document.querySelector(".ulProducts")) {

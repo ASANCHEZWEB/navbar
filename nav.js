@@ -17,10 +17,12 @@ function showList() {
   }
 }
 //AJUSTAR TAMAÑO DE LA VENTANA OVERFLOW DEL MENÚ
+const sizePantalla=window.innerHeight;
+const screenSize=document.querySelector('.listProducts').style.height = `${sizePantalla-(window.innerHeight*0.19)}px`;
 
- document.querySelector('.listProducts').style.height = `${window.innerHeight-(window.innerHeight*0.19)}px`;
-
-
+if(window.innerHeight!==sizePantalla){
+  alert("funciona")
+}
 //MOSTRAR LISTA DE PRODUCTOS
 function showProductsList() {
   if (document.querySelector(".ulProducts")) {

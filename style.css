@@ -178,7 +178,159 @@ h1 {
 }
 
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+     /* AJUSTE DE TAMAÑO IMAGENES NAV */
+     nav>div>button>img {
+        width: 23px;
+    }
+
+    /* AJUSTE DE STILOS DE BOTONES MENU Y CARRO */
+    nav>div>button {
+        background: none;
+        border-style: none;
+    }
+
+    /* AJUSTE DE LISTA DEL BOTON PRODUCTOS */
+    nav>div>ul>li {
+        padding-left: 35px;
+        margin-top: 18px;
+    }
+
+    /* OCULTAR MENU NAV */
+    .listProducts {
+        display: none;
+    }
+
+    /* MOSTRAR MENÚ NAV*/
+    .showList {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: white;
+        color: black;
+        list-style-type: none;
+        padding: 0px;
+        width: 100%;
+        margin-top: 18px;
+        margin-left: -2%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        overflow: scroll;
+
+    }
+
+    /* OCULTAR DROPDOWN DE PRODUCTOS */
+    .ulProducts {
+        display: none;
+    }
+
+    /* MOSTRAR LIST DE DROPDOWN PRODUCTOS */
+    .showUlProducts {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 16px;
+        list-style: none;
+        padding-top: 10px;
+    }
+
+    /* ESTILOS PARA LOS LI DE PRODUCTOS */
+    .showUlProducts>li {
+        margin-top: 10px;
+    }
+
+    /* OCULTAR LISTA DE FRUTAS */
+    .ulFruits {
+        display: none;
+    }
+
+    /* MOSTRAR LISTA DE FRUTAS */
+    .showfruits {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 16px;
+        list-style: none;
+        padding-top: 10px;
+    }
+
+    /* ESTILO PARA LOS LI DE FRUTAS */
+    .showfruits>li {
+        margin-top: 10px
+    }
+
+    /* ESTILOS PARA LOS ICONOS DE FRUTAS */
+    .showfruits>li>a>img {
+        width: 22px;
+    }
+
+    /* ESTILO PARA LOS BOTONES DE DROPDOWN DEL MENÚ */
+    .displayButtonsProds {
+        border: none;
+        background: none;
+        padding: 0px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* OCULTAR LISTA DE VERDURAS */
+    .ulVerduras {
+        display: none;
+    }
+
+    /* MOSTRAR LISTA VERDURAS */
+    .showVerduras {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 16px;
+        list-style: none;
+        padding-top: 10px;
+    }
+
+    /* AJUSTAR TAMAÑO ICONOS VERDURA */
+    .showVerduras>li>a>img {
+        width: 22px;
+    }
+
+    /* CSS CARRITO DENTRO DE MENÚ */
+
+    .cartStyleLI {
+        border-top-color: #33ff0057;
+        border-top-style: solid;
+        padding-top: 11px;
+        margin-top: 8px;
+    }
+
+    .cartStyleLI>a {
+        display: flex;
+        align-items: center;
+    }
+
+    .cartStyleLI>a>img {
+        width: 40px;
+    }
+
+    /* POSICIONES DE LOS 3 DIVS DEL NAV */
+    nav>div:nth-child(1) {
+        order: 2
+    }
+
+    nav>div:nth-child(2) {
+        margin-left: 2%;
+        order: 1
+    }
+
+    nav>div:nth-child(3) {
+        order: 3;
+        margin-right: 4%;
+    }
+
+    /* BOTON DE CARRO */
+    .buttonCart {
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+}
 
 
 @media (max-width: 991.98px) {}

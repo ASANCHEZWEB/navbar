@@ -12,7 +12,10 @@ nav {
     position: fixed;
     width: 100%;
 }
-
+/* ELIMINAR MARGO DE BOTONES */
+button{
+    outline: none;
+}
 /* LOGO */
 h1 {
     font-family: Miltonian Tattoo;

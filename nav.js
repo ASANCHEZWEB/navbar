@@ -18,15 +18,10 @@ function showList() {
 }
 //AJUSTAR TAMAÑO DE LA VENTANA OVERFLOW DEL MENÚ
 
-setInterval(function () {
-  //coger el tamaño de la pantalla
-  let tamanoPantalla = window.innerHeight;
-  //cambiar el tamaño de la caja de listado del menu
-  document.querySelector(".listProducts").style.height = `${
-    tamanoPantalla - window.innerHeight * 0.19
-  }px`;
-}, 3000);
-
+setInterval(() => {
+  document.querySelector(".listProducts").style.height = `${window.innerHeight - window.innerHeight * 0.19}px`;
+}, 1000);
+  
 //MOSTRAR LISTA DE PRODUCTOS
 function showProductsList() {
   if (document.querySelector(".ulProducts")) {

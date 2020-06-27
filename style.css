@@ -148,6 +148,7 @@ h1 {
     .cartStyleLI>a {
         display: flex;
         align-items: center;
+        margin-bottom: 29px;
     }
 
     .cartStyleLI>a>img {
@@ -303,6 +304,7 @@ h1 {
     .cartStyleLI>a {
         display: flex;
         align-items: center;
+        margin-bottom: 29px;
     }
 
     .cartStyleLI>a>img {

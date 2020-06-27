@@ -1,3 +1,5 @@
+//MOSTRAR MENÚ
+
 function showList() {
   document.querySelector(".listProducts").classList.toggle("showList");
   if (
@@ -15,6 +17,7 @@ function showList() {
   }
 }
 
+//MOSTRAR LISTA DE PRODUCTOS
 function showProductsList() {
   if (document.querySelector(".ulProducts")) {
     document
@@ -27,10 +30,20 @@ function showProductsList() {
   }
 }
 
+//MOSTRAR LISTA DE FRUTAS 
 function showFruitsList() {
   if (document.querySelector(".ulFruits")) {
     document.querySelector(".ulFruits").setAttribute("class", "showfruits");
   } else {
     document.querySelector(".showfruits").setAttribute("class", "ulFruits");
+  }
+}
+
+//MOSTRAR LISTA DE VERDURAS 
+function showVerduras() {
+  if (document.querySelector(".ulVerduras")) {
+    document.querySelector(".ulVerduras").setAttribute("class", "showVerduras");
+  } else {
+    document.querySelector(".showVerduras").setAttribute("class", "ulVerduras");
   }
 }

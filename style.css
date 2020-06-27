@@ -2,39 +2,48 @@ body {
     margin: 0px
 }
 
+/* CONTENEDOR BARRA DE NAVEGACIÓN */
 nav {
     display: flex;
     justify-content: space-between;
     background: #2ECC71;
     color: white;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
+/* LOGO */
 h1 {
     font-family: Miltonian Tattoo;
 }
 
-
+/* CSS PARA TAMAÑOS MOBILE */
 @media (max-width: 575.98px) {
 
+    /* AJUSTE DE TAMAÑO IMAGENES NAV */
     nav>div>button>img {
         width: 23px;
     }
 
+    /* AJUSTE DE STILOS DE BOTONES MENU Y CARRO */
     nav>div>button {
         background: none;
         border-style: none;
     }
 
+    /* AJUSTE DE LISTA DEL BOTON PRODUCTOS */
     nav>div>ul>li {
         padding-left: 35px;
         margin-top: 18px;
     }
 
+    /* OCULTAR MENU NAV */
     .listProducts {
         display: none;
     }
 
+    /* MOSTRAR MENÚ NAV*/
     .showList {
         display: flex;
         flex-direction: column;
@@ -48,14 +57,17 @@ h1 {
         margin-left: -2%;
         padding-top: 16px;
         padding-bottom: 16px;
-        height: 100%;
+        overflow: scroll;
+        height: 423px;
 
     }
 
+    /* OCULTAR DROPDOWN DE PRODUCTOS */
     .ulProducts {
         display: none;
     }
 
+    /* MOSTRAR LIST DE DROPDOWN PRODUCTOS */
     .showUlProducts {
         display: flex;
         flex-direction: column;
@@ -63,17 +75,18 @@ h1 {
         list-style: none;
         padding-top: 10px;
     }
+
+    /* ESTILOS PARA LOS LI DE PRODUCTOS */
     .showUlProducts>li {
-        margin-top:10px;
-    }
-    .ulProducts>li {
         margin-top: 10px;
     }
 
+    /* OCULTAR LISTA DE FRUTAS */
     .ulFruits {
         display: none;
     }
 
+    /* MOSTRAR LISTA DE FRUTAS */
     .showfruits {
         display: flex;
         flex-direction: column;
@@ -81,12 +94,18 @@ h1 {
         list-style: none;
         padding-top: 10px;
     }
+
+    /* ESTILO PARA LOS LI DE FRUTAS */
     .showfruits>li {
-       margin-top:10px
+        margin-top: 10px
     }
-    .showfruits>li>a>img{
+
+    /* ESTILOS PARA LOS ICONOS DE FRUTAS */
+    .showfruits>li>a>img {
         width: 22px;
     }
+    
+    /* ESTILO PARA LOS BOTONES DE DROPDOWN DEL MENÚ */
     .displayButtonsProds {
         border: none;
         background: none;
@@ -96,6 +115,24 @@ h1 {
         align-items: center;
     }
 
+    /* OCULTAR LISTA DE VERDURAS */
+    .ulVerduras {
+        display: none;
+    }
+
+    /* MOSTRAR LISTA VERDURAS */
+    .showVerduras {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 16px;
+        list-style: none;
+        padding-top: 10px;
+    }
+    /* AJUSTAR TAMAÑO ICONOS VERDURA */
+    .showVerduras>li>a>img {
+        width: 22px;
+    }
+    /* POSICIONES DE LOS 3 DIVS DEL NAV */
     nav>div:nth-child(1) {
         order: 2
     }
@@ -110,6 +147,7 @@ h1 {
         margin-right: 2%;
     }
 
+    /* BOTON DE CARRO */
     .buttonCart {
         display: flex;
         align-items: center;

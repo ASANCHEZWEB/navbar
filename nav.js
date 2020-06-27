@@ -17,7 +17,7 @@ function showList() {
   }
 }
 //AJUSTAR TAMAÑO DE LA VENTANA OVERFLOW DEL MENÚ
-document.querySelector('.listProducts').style.height = `${screen.height-(screen.height*0.15)}px`;
+document.querySelector('.listProducts').style.height = `${window.innerHeight-(window.innerHeight*0.19)}px`;
 
 //MOSTRAR LISTA DE PRODUCTOS
 function showProductsList() {

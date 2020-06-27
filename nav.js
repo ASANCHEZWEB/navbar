@@ -21,8 +21,7 @@ const sizeScreen = window.innerHeight;
  let sizeNavBar = document.querySelector('.listProducts').style.height = `${sizeScreen-(window.innerHeight*0.19)}px`;
 
 if(window.innerHeight!==sizeScreen){
-  document.querySelector(".showUlProducts").setAttribute("class", "ulProducts");
-  document.querySelector('.listProducts').style.height = `${window.innerHeight-(window.innerHeight*0.19)}px`;
+  alert("funciona")
 }
 //MOSTRAR LISTA DE PRODUCTOS
 function showProductsList() {

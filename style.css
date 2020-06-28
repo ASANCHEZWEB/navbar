@@ -61,6 +61,7 @@ h1 {
         padding-top: 16px;
         padding-bottom: 16px;
         overflow: scroll;
+        height: -webkit-fill-available;
 
     }
 
@@ -143,6 +144,7 @@ h1 {
         border-top-style: solid;
         padding-top: 11px;
         margin-top: 8px;
+        margin-bottom: 40px;
     }
 
     .cartStyleLI>a {
@@ -217,6 +219,7 @@ h1 {
         padding-top: 16px;
         padding-bottom: 16px;
         overflow: scroll;
+        height: -webkit-fill-available;
 
     }
 
@@ -299,6 +302,7 @@ h1 {
         border-top-style: solid;
         padding-top: 11px;
         margin-top: 8px;
+        margin-bottom: 40px;
     }
 
     .cartStyleLI>a {

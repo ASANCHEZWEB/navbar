@@ -90,14 +90,17 @@ h1 {
     .showUlProducts>li {
         margin-top: 10px;
     }
-/* OCULTAR IMAGENES EN VERSION MOBILE */
-.showUlProducts>li>a>img{
-    display: none;
-}
-   /* OCULTAR IMAGENES EN VERSION MOBILE */
-   .showUlProducts>li>button>img:nth-child(1){
-    display: none;
-}
+
+    /* OCULTAR IMAGENES EN VERSION MOBILE */
+    .showUlProducts>li>a>img {
+        display: none;
+    }
+
+    /* OCULTAR IMAGENES EN VERSION MOBILE */
+    .showUlProducts>li>button>img:nth-child(1) {
+        display: none;
+    }
+
     /* OCULTAR LISTA DE FRUTAS */
     .ulFruits {
         display: none;
@@ -256,14 +259,17 @@ h1 {
     .showUlProducts>li {
         margin-top: 10px;
     }
-/* OCULTAR IMAGENES EN VERSION MOBILE */
-    .showUlProducts>li>a>img{
-        display: none;
-    }
+
     /* OCULTAR IMAGENES EN VERSION MOBILE */
-    .showUlProducts>li>button>img:nth-child(1){
+    .showUlProducts>li>a>img {
         display: none;
     }
+
+    /* OCULTAR IMAGENES EN VERSION MOBILE */
+    .showUlProducts>li>button>img:nth-child(1) {
+        display: none;
+    }
+
     /* OCULTAR LISTA DE FRUTAS */
     .ulFruits {
         display: none;
@@ -360,11 +366,7 @@ h1 {
     }
 }
 
-
 @media (min-width: 768px) and (max-width: 991.98px) {
-
-   
-
     nav>div:nth-child(1) {
         margin-left: 2%;
 
@@ -450,6 +452,7 @@ h1 {
         border-bottom-right-radius: 60px;
         border-bottom-left-radius: 60px;
     }
+
     .showfruits>li {
         width: 185px;
         margin-top: 8px;
@@ -462,20 +465,25 @@ h1 {
         color: black;
         width: 229px;
     }
-    .showUlProducts>li>a{
+
+    .showUlProducts>li>a {
         display: flex;
         align-items: center;
     }
-    .showUlProducts>li>a>img{
+
+    .showUlProducts>li>a>img {
         width: 48px;
     }
+
     .showUlProducts>li>button {
         font-weight: bold;
         font-size: 16px;
     }
+
     .showfruits>li>a>img {
         width: 35px;
     }
+
     .showfruits>li>a {
         font-size: 15px;
         font-weight: 600;
@@ -485,37 +493,41 @@ h1 {
         display: none;
     }
 
-    .showVerduras{
-            display: flex;
-            padding-bottom: 16px;
-            list-style: none;
-            padding-top: 10px;
-            flex-direction: row;
-            padding-left: 10px;
-            padding-right: 10px;
-            flex-wrap: wrap;
-            left: 0px;
-            top: 290px;
-            position: absolute;
-            background: white;
-            border-top: solid;
-            border-top-width: 1px;
-            border-top-color: brown;
-            justify-content: center;
-            border-bottom-right-radius: 60px;
-            border-bottom-left-radius: 60px;
-        }
-        .showVerduras>li {
-            width: 185px;
-            margin-top: 8px;
-        }
-        .showVerduras>li>a {
-            font-size: 16px;
-            font-weight: 600;
-        }
-        .showVerduras>li>a>img {
-            width: 35px;
-        }
+    .showVerduras {
+        display: flex;
+        padding-bottom: 16px;
+        list-style: none;
+        padding-top: 10px;
+        flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-wrap: wrap;
+        left: 0px;
+        top: 290px;
+        position: absolute;
+        background: white;
+        border-top: solid;
+        border-top-width: 1px;
+        border-top-color: brown;
+        justify-content: center;
+        border-bottom-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+    }
+
+    .showVerduras>li {
+        width: 185px;
+        margin-top: 8px;
+    }
+
+    .showVerduras>li>a {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .showVerduras>li>a>img {
+        width: 35px;
+    }
+
     .ulVerduras {
         display: none;
     }
@@ -532,7 +544,358 @@ h1 {
 
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    nav>div:nth-child(1) {
+        margin-left: 2%;
+
+    }
+
+    nav>div:nth-child(3) {
+        margin-right: 4%;
+
+    }
+
+    nav>div:nth-child(2)>button {
+        display: none;
+    }
+
+    /* AJUSTE DE TAMAÑO IMAGENES NAV */
+    nav>div>button>img {
+        width: 23px;
+    }
+
+    /* ESTILO PARA LOS BOTONES DE DROPDOWN DEL MENÚ */
+    .displayButtonsProds {
+        border: none;
+        background: none;
+        padding: 0px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* AJUSTE DE STILOS DE BOTONES MENU Y CARRO */
+    nav>div>button {
+        background: none;
+        border-style: none;
+    }
+
+    .listProducts {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .listProducts>li {
+        margin-left: 30px;
+    }
+
+    /* OCULTAR DROPDOWN DE PRODUCTOS */
+    .ulProducts {
+        display: none;
+    }
+
+    /* MOSTRAR LIST DE DROPDOWN PRODUCTOS */
+    .showUlProducts {
+        display: flex;
+        padding-bottom: 30px;
+        list-style: none;
+        position: absolute;
+        background-color: white;
+        left: 0px;
+        justify-content: space-between;
+        margin-top: 24px;
+        flex-wrap: wrap;
+        padding-right: 40px;
+        padding-top: 30px;
+    }
+
+    .showfruits {
+        display: flex;
+        padding-bottom: 16px;
+        list-style: none;
+        padding-top: 10px;
+        flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-wrap: wrap;
+        left: 0px;
+        top: 232px;
+        position: absolute;
+        background: white;
+        border-top: solid;
+        border-top-width: 1px;
+        border-top-color: brown;
+        justify-content: center;
+        border-bottom-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+    }
+
+    .showfruits>li {
+        width: 185px;
+        margin-top: 8px;
+    }
+
+    .showUlProducts>li {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        width: 229px;
+    }
+
+    .showUlProducts>li>a {
+        display: flex;
+        align-items: center;
+    }
+
+    .showUlProducts>li>a>img {
+        width: 48px;
+    }
+
+    .showUlProducts>li>button {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .showfruits>li>a>img {
+        width: 35px;
+    }
+
+    .showfruits>li>a {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .ulFruits {
+        display: none;
+    }
+
+    .showVerduras {
+        display: flex;
+        padding-bottom: 16px;
+        list-style: none;
+        padding-top: 10px;
+        flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-wrap: wrap;
+        left: 0px;
+        top: 234px;
+        position: absolute;
+        background: white;
+        border-top: solid;
+        border-top-width: 1px;
+        border-top-color: brown;
+        justify-content: center;
+        border-bottom-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+    }
+
+    .showVerduras>li {
+        width: 185px;
+        margin-top: 8px;
+    }
+
+    .showVerduras>li>a {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .showVerduras>li>a>img {
+        width: 35px;
+    }
+
+    .ulVerduras {
+        display: none;
+    }
+
+    .cartStyleLI {
+        display: none;
+    }
+
+    .buttonCart {
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+}
 
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    nav>div:nth-child(1) {
+        margin-left: 2%;
+
+    }
+
+    nav>div:nth-child(3) {
+        margin-right: 4%;
+
+    }
+
+    nav>div:nth-child(2)>button {
+        display: none;
+    }
+
+    /* AJUSTE DE TAMAÑO IMAGENES NAV */
+    nav>div>button>img {
+        width: 23px;
+    }
+
+    /* ESTILO PARA LOS BOTONES DE DROPDOWN DEL MENÚ */
+    .displayButtonsProds {
+        border: none;
+        background: none;
+        padding: 0px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* AJUSTE DE STILOS DE BOTONES MENU Y CARRO */
+    nav>div>button {
+        background: none;
+        border-style: none;
+    }
+
+    .listProducts {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .listProducts>li {
+        margin-left: 30px;
+    }
+
+    /* OCULTAR DROPDOWN DE PRODUCTOS */
+    .ulProducts {
+        display: none;
+    }
+
+    /* MOSTRAR LIST DE DROPDOWN PRODUCTOS */
+    .showUlProducts {
+        display: flex;
+        padding-bottom: 30px;
+        list-style: none;
+        position: absolute;
+        background-color: white;
+        left: 0px;
+        justify-content: space-between;
+        margin-top: 24px;
+        flex-wrap: wrap;
+        padding-right: 40px;
+        padding-top: 30px;
+    }
+
+    .showfruits {
+        display: flex;
+        padding-bottom: 16px;
+        list-style: none;
+        padding-top: 10px;
+        flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-wrap: wrap;
+        left: 0px;
+        top: 232px;
+        position: absolute;
+        background: white;
+        border-top: solid;
+        border-top-width: 1px;
+        border-top-color: brown;
+        justify-content: center;
+        border-bottom-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+    }
+
+    .showfruits>li {
+        width: 185px;
+        margin-top: 8px;
+    }
+
+    .showUlProducts>li {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        width: 229px;
+    }
+
+    .showUlProducts>li>a {
+        display: flex;
+        align-items: center;
+    }
+
+    .showUlProducts>li>a>img {
+        width: 48px;
+    }
+
+    .showUlProducts>li>button {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .showfruits>li>a>img {
+        width: 35px;
+    }
+
+    .showfruits>li>a {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .ulFruits {
+        display: none;
+    }
+
+    .showVerduras {
+        display: flex;
+        padding-bottom: 16px;
+        list-style: none;
+        padding-top: 10px;
+        flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-wrap: wrap;
+        left: 0px;
+        top: 234px;
+        position: absolute;
+        background: white;
+        border-top: solid;
+        border-top-width: 1px;
+        border-top-color: brown;
+        justify-content: center;
+        border-bottom-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+    }
+
+    .showVerduras>li {
+        width: 185px;
+        margin-top: 8px;
+    }
+
+    .showVerduras>li>a {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .showVerduras>li>a>img {
+        width: 35px;
+    }
+
+    .ulVerduras {
+        display: none;
+    }
+
+    .cartStyleLI {
+        display: none;
+    }
+
+    .buttonCart {
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+}

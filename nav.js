@@ -16,12 +16,9 @@ function showList() {
       .setAttribute("src", "menu.svg");
   }
 }
-//AJUSTAR TAMAÑO DE LA VENTANA OVERFLOW DEL MENÚ
 
-// setInterval(() => {
-//   document.querySelector(".listProducts").style.height = `${window.innerHeight - window.innerHeight * 0.19}px`;
-// }, 1000);
-  
+
+
 //MOSTRAR LISTA DE PRODUCTOS
 function showProductsList() {
   if (document.querySelector(".ulProducts")) {

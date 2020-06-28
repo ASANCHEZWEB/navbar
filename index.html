@@ -17,12 +17,12 @@
             <h1>HORTICURITA</h1>
         </div>
         <div>
-            <button onclick="showList()"><img src="menu.svg"></button>
+            <button onclick="showList()" class="disableZoombutton"><img src="menu.svg"></button>
             <ul class="listProducts">
 
                 <li><a>INICIO</a></li>
                 <li>
-                    <button onclick="showProductsList()" class="displayButtonsProds">PRODUCTOS <img src="arrowMenu.png"
+                    <button onclick="showProductsList()" class="displayButtonsProds disableZoombutton">PRODUCTOS <img src="arrowMenu.png"
                             style="
                         width: 15px;
                         margin-left: 5px;
@@ -30,7 +30,7 @@
                     <ul class="ulProducts">
                         <li><a>Todos los productos</a></li>
                         <li>
-                            <button onclick="showFruitsList()" class="displayButtonsProds">Frutas<img
+                            <button onclick="showFruitsList()" class="displayButtonsProds disableZoombutton">Frutas<img
                                     src="arrowMenu.png" style="
                                 width: 15px;
                                 margin-left: 5px;
@@ -51,7 +51,7 @@
                                 <li><a>Otras frutas</a></li>
                             </ul>
                         </li>
-                        <li><button onclick="showVerduras()" class="displayButtonsProds">Verduras y hortalizas<img
+                        <li><button onclick="showVerduras()" class="displayButtonsProds disableZoombutton">Verduras y hortalizas<img
                                     src="arrowMenu.png" style="
                         width: 15px;
                         margin-left: 5px;
@@ -83,7 +83,7 @@
             </ul>
         </div>
         <div>
-            <button onclick="showList()" class="buttonCart"><img src="carritoIcons.png">(0)</button>
+            <button onclick="showList()" class="buttonCart disableZoombutton"><img src="carritoIcons.png">(0)</button>
         </div>
     </nav>
     <script src="nav.js"></script>

@@ -21,6 +21,9 @@ h1 {
     font-family: Miltonian Tattoo;
 }
 
+.disableZoombutton{
+    touch-action: manipulation;
+}
 /* CSS PARA TAMAÑOS MOBILE */
 @media (max-width: 575.98px) {
 
@@ -177,7 +180,6 @@ h1 {
         display: flex;
         align-items: center;
         color: white;
-        touch-action: manipulation;
     }
 }
 
@@ -336,7 +338,6 @@ h1 {
         display: flex;
         align-items: center;
         color: white;
-        touch-action: manipulation;
     }
 }
 

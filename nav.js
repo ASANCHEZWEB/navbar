@@ -28,6 +28,7 @@ function showProductsList() {
       .querySelector(".showUlProducts")
       .setAttribute("class", "ulProducts");
   }
+  
 }
 
 //MOSTRAR LISTA DE FRUTAS
@@ -54,34 +55,19 @@ function showVerduras() {
   }
 }
 
+
 //ocultar menu si se hace click fuera
-let arraybuttons = [
-  ...document
-    .querySelector("nav>div:nth-child(2)")
-    .getElementsByTagName("button"),
-];
-let arrayElements = [];
+let arrayAs= [...document.querySelectorAll('.listProducts>li>a')]
 
-for(i=0;i<arraybuttons.length;i++){
-  arrayElements.push(arraybuttons[i]);
-};
 
-let ulsArray=[...document.querySelector("nav>div:nth-child(2)").getElementsByTagName("ul")];
 
-for(i=0;i<ulsArray.length;i++){
-  arrayElements.push(ulsArray[i]);
-};
 
-arrayElements.push(arraybuttons[0].querySelector("img"));
-window.addEventListener("click", function (event) {
-  if (!arrayElements.includes(event.target)) {
-    let atributteClass = document.querySelector(".listProducts").getAttribute('class')
-    
-    if (atributteClass == "listProducts showList") {
-      showList();
-    }
-
-   
+window.addEventListener("click", function(event) {
+ 
+  if(arrayAs.includes(event.target)){
+    showList()
   }
 
 });
+
+

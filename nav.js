@@ -17,8 +17,6 @@ function showList() {
   }
 }
 
-
-
 //MOSTRAR LISTA DE PRODUCTOS
 function showProductsList() {
   if (document.querySelector(".ulProducts")) {

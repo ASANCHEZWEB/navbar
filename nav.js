@@ -64,9 +64,12 @@ let arrayAs= [...document.querySelectorAll('.listProducts>li>a')]
 
 window.addEventListener("click", function(event) {
  
-  if(arrayAs.includes(event.target)){
-    showList()
-  }
+  arrayAs.forEach(element=>{
+    if(event.target==element){
+      showList()
+    }
+  })
+ 
 
 });
 

@@ -57,15 +57,22 @@ function showVerduras() {
 
 
 //ocultar menu si se hace click fuera
-let arrayAs= [...document.querySelectorAll('.listProducts>li')]
+
+let arrayElements=[];
+
+[...document.querySelectorAll('.listProducts>li')].forEach(element=>{
+if(!element.querySelector('button')){
+  arrayElements.push(element)
+}
+})
 
 
 
+console.log(arrayElements)
 
+for(i=0;i<arrayElements.length;i++){
 
-for(i=0;i<arrayAs.length;i++){
-
-  arrayAs[i].onclick = function(){
+  arrayElements[i].onclick = function(){
     showList()
 
   }

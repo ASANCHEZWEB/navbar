@@ -69,7 +69,11 @@ let arrayElements = [];
     arrayElements.push(element);
   }
 });
-
+[...document.querySelectorAll(".listProducts>li>ul>li>ul>li")].forEach((element) => {
+  if (!element.querySelector("button")) {
+    arrayElements.push(element);
+  }
+});
 for (i = 0; i < arrayElements.length; i++) {
   arrayElements[i].onclick = function () {
     showList();

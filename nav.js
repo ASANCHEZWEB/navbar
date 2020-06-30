@@ -28,6 +28,7 @@ function showProductsList() {
       .querySelector(".showUlProducts")
       .setAttribute("class", "ulProducts");
   }
+  
 }
 
 //MOSTRAR LISTA DE FRUTAS
@@ -53,3 +54,26 @@ function showVerduras() {
     document.querySelector(".showVerduras").setAttribute("class", "ulVerduras");
   }
 }
+
+
+//ocultar menu si se hace click fuera
+let arraybuttons= [...document.querySelector('nav>div:nth-child(2)').getElementsByTagName('button')]
+let arrayElements=[]
+
+arraybuttons.forEach(element=>{
+  arrayElements.push(element)
+});
+[...document.querySelector('nav>div:nth-child(2)').getElementsByTagName('ul')].forEach(element=>{
+  arrayElements.push(element)
+})
+arrayElements.push(arraybuttons[0].querySelector('img'))
+
+window.addEventListener("click", function(event) {
+if(!arrayElements.includes(event.target)){
+  showList()
+  document.querySelector('nav>div:nth-child(2)').querySelector('ul>li>ul').setAttribute('class','ulProducts')
+}
+
+});
+
+

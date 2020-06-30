@@ -81,10 +81,7 @@ window.addEventListener("click", function (event) {
       showList();
     }
 
-    document
-      .querySelector("nav>div:nth-child(2)")
-      .querySelector("ul>li>ul")
-      .setAttribute("class", "ulProducts");
+   
   }
 
 });

@@ -75,7 +75,9 @@ for(i=0;i<ulsArray.length;i++){
 arrayElements.push(arraybuttons[0].querySelector("img"));
 window.addEventListener("click", function (event) {
   if (!arrayElements.includes(event.target)) {
-    if (document.querySelector(".listProducts").classList.contains('showList')) {
+    let atributteClass = document.querySelector(".listProducts").getAttribute('class')
+    
+    if (atributteClass == "listProducts showList") {
       showList();
     }
 

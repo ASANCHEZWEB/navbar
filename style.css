@@ -52,6 +52,7 @@ h1 {
         padding-left: 35px;
         margin-top: 18px;
         font-family: Montserrat;
+        width: max-content;
     }
 
     /* OCULTAR MENU NAV */
@@ -95,6 +96,7 @@ h1 {
     /* ESTILOS PARA LOS LI DE PRODUCTOS */
     .showUlProducts>li {
         margin-top: 10px;
+        width: max-content;
     }
 
     /* OCULTAR IMAGENES EN VERSION MOBILE */
@@ -125,6 +127,7 @@ h1 {
     .showfruits>li {
         margin-top: 10px;
         font-family: pacifico;
+        width: max-content;
     }
 
     /* ESTILOS PARA LOS ICONOS DE FRUTAS */
@@ -158,6 +161,7 @@ h1 {
 
     .showVerduras>li {
         font-family: Pacifico;
+        width: max-content;
     }
 
     /* AJUSTAR TAMAÑO ICONOS VERDURA */
@@ -232,6 +236,7 @@ h1 {
         padding-left: 35px;
         margin-top: 18px;
         font-family: Montserrat;
+        width: max-content;
     }
 
     /* OCULTAR MENU NAV */
@@ -275,6 +280,7 @@ h1 {
     /* ESTILOS PARA LOS LI DE PRODUCTOS */
     .showUlProducts>li {
         margin-top: 10px;
+        width: max-content;
     }
 
     /* OCULTAR IMAGENES EN VERSION MOBILE */
@@ -305,6 +311,7 @@ h1 {
     .showfruits>li {
         margin-top: 10px;
         font-family: pacifico;
+        width: max-content;
     }
 
     /* ESTILOS PARA LOS ICONOS DE FRUTAS */
@@ -338,6 +345,7 @@ h1 {
 
     .showVerduras>li {
         font-family: Pacifico;
+        width: max-content;
     }
 
     /* AJUSTAR TAMAÑO ICONOS VERDURA */

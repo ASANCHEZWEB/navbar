@@ -28,7 +28,6 @@ function showProductsList() {
       .querySelector(".showUlProducts")
       .setAttribute("class", "ulProducts");
   }
-  
 }
 
 //MOSTRAR LISTA DE FRUTAS
@@ -55,27 +54,37 @@ function showVerduras() {
   }
 }
 
-
 //ocultar menu si se hace click fuera
-let arraybuttons= [...document.querySelector('nav>div:nth-child(2)').getElementsByTagName('button')]
-let arrayElements=[]
+let arraybuttons = [
+  ...document
+    .querySelector("nav>div:nth-child(2)")
+    .getElementsByTagName("button"),
+];
+let arrayElements = [];
 
-arraybuttons.forEach(element=>{
-  arrayElements.push(element)
+arraybuttons.forEach((element) => {
+  arrayElements.push(element);
 });
-[...document.querySelector('nav>div:nth-child(2)').getElementsByTagName('ul')].forEach(element=>{
-  arrayElements.push(element)
-})
-arrayElements.push(arraybuttons[0].querySelector('img'))
+[
+  ...document.querySelector("nav>div:nth-child(2)").getElementsByTagName("ul"),
+].forEach((element) => {
+  arrayElements.push(element);
+});
+arrayElements.push(arraybuttons[0].querySelector("img"));
 
+window.addEventListener("click", function (event) {
+  if (!arrayElements.includes(event.target)) {
+    if (
+      document.querySelector("nav > div:nth-child(2) > ul").className ==
+      "listProducts showList"
+    ) {
+      showList();
+    }
 
-
-window.onclick = function(event) {
-  if(!arrayElements.includes(event.target)){
-    showList()
-  
-    document.querySelector('nav>div:nth-child(2)').querySelector('ul>li>ul').setAttribute('class','ulProducts')
+    document
+      .querySelector("nav>div:nth-child(2)")
+      .querySelector("ul>li>ul")
+      .setAttribute("class", "ulProducts");
   }
-
-}
-
+  
+});

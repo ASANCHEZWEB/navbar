@@ -74,8 +74,12 @@ let arrayElements = [];
     arrayElements.push(element);
   }
 });
+
 for (i = 0; i < arrayElements.length; i++) {
   arrayElements[i].onclick = function () {
-    showList();
+    if(document.querySelector('.showList')){
+      showList();
+    }
+    
   };
 }

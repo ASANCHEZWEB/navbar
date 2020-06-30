@@ -68,13 +68,14 @@ arraybuttons.forEach(element=>{
 })
 arrayElements.push(arraybuttons[0].querySelector('img'))
 
-window.addEventListener("click", function(event) {
-if(!arrayElements.includes(event.target)){
-  showList()
+
+
+window.onclick = function(event) {
+  if(!arrayElements.includes(event.target)){
+    showList()
   
-  document.querySelector('nav>div:nth-child(2)').querySelector('ul>li>ul').setAttribute('class','ulProducts')
+    document.querySelector('nav>div:nth-child(2)').querySelector('ul>li>ul').setAttribute('class','ulProducts')
+  }
+
 }
-
-});
-
 

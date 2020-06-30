@@ -62,16 +62,17 @@ let arraybuttons = [
 ];
 let arrayElements = [];
 
-arraybuttons.forEach((element) => {
-  arrayElements.push(element);
-});
-[
-  ...document.querySelector("nav>div:nth-child(2)").getElementsByTagName("ul"),
-].forEach((element) => {
-  arrayElements.push(element);
-});
-arrayElements.push(arraybuttons[0].querySelector("img"));
+for(i=0;i<arraybuttons.length;i++){
+  arrayElements.push(arraybuttons[i]);
+};
 
+let ulsArray=[...document.querySelector("nav>div:nth-child(2)").getElementsByTagName("ul")];
+
+for(i=0;i<ulsArray.length;i++){
+  arrayElements.push(ulsArray[i]);
+};
+
+arrayElements.push(arraybuttons[0].querySelector("img"));
 window.addEventListener("click", function (event) {
   if (!arrayElements.includes(event.target)) {
     if (document.querySelector(".listProducts").classList.contains('showList')) {

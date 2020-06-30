@@ -57,7 +57,7 @@ function showVerduras() {
 
 
 //ocultar menu si se hace click fuera
-let arrayAs= [...document.querySelectorAll('.listProducts>li>a')]
+let arrayAs= [...document.querySelectorAll('.listProducts>li')]
 
 
 

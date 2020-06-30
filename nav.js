@@ -62,28 +62,14 @@ let arrayAs= [...document.querySelectorAll('.listProducts>li>a')]
 
 
 
-window.addEventListener("click", function(event) {
- 
-  arrayAs.forEach(element=>{
-    if(event.target==element){
-      document.querySelector(".listProducts").classList.toggle("showList");
-  if (
-    document
-      .querySelector("nav>div:nth-child(2)>button>img")
-      .getAttribute("src") === "menu.svg"
-  ) {
-    document
-      .querySelector("nav>div:nth-child(2)>button>img")
-      .setAttribute("src", "closeMenu.png");
-  } else {
-    document
-      .querySelector("nav>div:nth-child(2)>button>img")
-      .setAttribute("src", "menu.svg");
-  }
-    }
-  })
- 
 
-});
+for(i=0;i<arrayAs.length;i++){
+
+  arrayAs[i].onclick = function(){
+    showList()
+
+  }
+
+}
 
 

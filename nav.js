@@ -75,8 +75,7 @@ arrayElements.push(arraybuttons[0].querySelector("img"));
 window.addEventListener("click", function (event) {
   if (!arrayElements.includes(event.target)) {
     if (
-      document.querySelector("nav > div:nth-child(2) > ul").className ==
-      "listProducts showList"
+      document.querySelector("nav > div:nth-child(2) > ul").classList.contains('showList')
     ) {
       showList();
     }
@@ -86,5 +85,5 @@ window.addEventListener("click", function (event) {
       .querySelector("ul>li>ul")
       .setAttribute("class", "ulProducts");
   }
-  
+
 });

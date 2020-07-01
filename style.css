@@ -185,6 +185,7 @@ nav>div:nth-child(1)>a {
         padding-top: 11px;
         margin-top: 8px;
         margin-bottom: 40px;
+        width: 100%;
     }
 
     .cartStyleLI>a {
@@ -222,6 +223,9 @@ nav>div:nth-child(1)>a {
     }
     .buttonCart>span{
         display: none;
+    }
+    .buttonCart>img{
+        width: 23px;
     }
 }
 
@@ -369,6 +373,7 @@ nav>div:nth-child(1)>a {
         padding-top: 11px;
         margin-top: 8px;
         margin-bottom: 40px;
+        width: 100%;
     }
 
     .cartStyleLI>a {
@@ -395,9 +400,8 @@ nav>div:nth-child(1)>a {
         order: 3;
         margin-right: 4%;
     }
-
-    /* BOTON DE CARRO */
-    .buttonCart {
+     /* BOTON DE CARRO */
+     .buttonCart {
         display: flex;
         align-items: center;
         color: white;
@@ -407,8 +411,10 @@ nav>div:nth-child(1)>a {
     .buttonCart>span{
         display: none;
     }
+    .buttonCart>img{
+        width: 28px;
+    }
 }
-
 
 @media (min-width: 768px) and (max-width: 991.98px) {
 

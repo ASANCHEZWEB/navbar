@@ -608,6 +608,9 @@ nav>div:nth-child(1)>a {
     .buttonCart>span{
         display: none;
     }
+    .buttonCart>img {
+        width: 28px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -799,6 +802,9 @@ nav>div:nth-child(1)>a {
     }
     .buttonCart>span{
         font-size: 15px;
+    }
+    .buttonCart>img {
+        width: 28px;
     }
 }
 
@@ -992,5 +998,8 @@ nav>div:nth-child(1)>a {
     }
     .buttonCart>span{
         font-size: 16px;
+    }
+    .buttonCart>img {
+        width: 28px;
     }
 }

@@ -73,19 +73,17 @@ let arrayElements = [];
     }
   }
 );
+
 for (i = 0; i < arrayElements.length; i++) {
   arrayElements[i].onclick = function () {
     if (document.querySelector(".showList")) {
       showList();
     }
+    if (document.querySelector(".showUlProducts")) {
+      showProductsList();
+    }
   };
 }
 
-//ocultar menu cuando se hace click en pc
-let arrayElementsPc = [];
 
-[...document.querySelectorAll(".listProducts>li")].forEach((element) => {
-  if (!element.querySelector("button")) {
-    arrayElements.push(element);
-  }
-});
+

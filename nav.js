@@ -1,6 +1,6 @@
 //MOSTRAR MENÚ
 
-function showList() {
+let showList = () => {
   document.querySelector(".listProducts").classList.toggle("showList");
   if (
     document
@@ -15,10 +15,10 @@ function showList() {
       .querySelector("nav>div:nth-child(2)>button>img")
       .setAttribute("src", "menu.svg");
   }
-}
+};
 
 //MOSTRAR LISTA DE PRODUCTOS
-function showProductsList() {
+let showProductsList = () => {
   if (document.querySelector(".ulProducts")) {
     document
       .querySelector(".ulProducts")
@@ -28,10 +28,10 @@ function showProductsList() {
       .querySelector(".showUlProducts")
       .setAttribute("class", "ulProducts");
   }
-}
+};
 
 //MOSTRAR LISTA DE FRUTAS
-function showFruitsList() {
+let showFruitsList = () => {
   if (document.querySelector(".showVerduras")) {
     document.querySelector(".showVerduras").setAttribute("class", "ulVerduras");
   }
@@ -40,10 +40,10 @@ function showFruitsList() {
   } else {
     document.querySelector(".showfruits").setAttribute("class", "ulFruits");
   }
-}
+};
 
 //MOSTRAR LISTA DE VERDURAS
-function showVerduras() {
+let showVerduras = () => {
   if (document.querySelector(".showfruits")) {
     document.querySelector(".showfruits").setAttribute("class", "ulFruits");
   }
@@ -52,34 +52,40 @@ function showVerduras() {
   } else {
     document.querySelector(".showVerduras").setAttribute("class", "ulVerduras");
   }
+};
+
+//ocultar menu si se clickea un elemento del menu mobile
+let arrayElements = [];
+[...document.querySelectorAll(".listProducts>li")].forEach((element) => {
+  if (!element.querySelector("button")) {
+    arrayElements.push(element);
+  }
+});
+[...document.querySelectorAll(".listProducts>li>ul>li")].forEach((element) => {
+  if (!element.querySelector("button")) {
+    arrayElements.push(element);
+  }
+});
+[...document.querySelectorAll(".listProducts>li>ul>li>ul>li")].forEach(
+  (element) => {
+    if (!element.querySelector("button")) {
+      arrayElements.push(element);
+    }
+  }
+);
+for (i = 0; i < arrayElements.length; i++) {
+  arrayElements[i].onclick = function () {
+    if (document.querySelector(".showList")) {
+      showList();
+    }
+  };
 }
 
-//ocultar menu si se hace click fuera
-
-let arrayElements = [];
+//ocultar menu cuando se hace click en pc
+let arrayElementsPc = [];
 
 [...document.querySelectorAll(".listProducts>li")].forEach((element) => {
   if (!element.querySelector("button")) {
     arrayElements.push(element);
   }
 });
-
-[...document.querySelectorAll(".listProducts>li>ul>li")].forEach((element) => {
-  if (!element.querySelector("button")) {
-    arrayElements.push(element);
-  }
-});
-[...document.querySelectorAll(".listProducts>li>ul>li>ul>li")].forEach((element) => {
-  if (!element.querySelector("button")) {
-    arrayElements.push(element);
-  }
-});
-
-for (i = 0; i < arrayElements.length; i++) {
-  arrayElements[i].onclick = function () {
-    if(document.querySelector('.showList')){
-      showList();
-    }
-    
-  };
-}

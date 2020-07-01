@@ -63,6 +63,7 @@ let arrayElements = [];
     }
   }
 );
+arrayElements.push(document.querySelector("nav>div:nth-child(1)>a"))
 
 for (i = 0; i < arrayElements.length; i++) {
   arrayElements[i].onclick = function () {
@@ -79,17 +80,17 @@ window.onclick = function(event){
 let mobileMenu = document.querySelector("nav > div:nth-child(2) > button").contains(event.target);
 let desktopMenu = document.querySelector("nav > div:nth-child(2) > ul > li:nth-child(2) > button").contains(event.target);
 
-console.log(arrayElements)
+
 
   if (!mobileMenu && !desktopMenu){
 
     if (document.querySelector(".showList")) {
       showList();
-      alert("hola")
+      
     }
     if (document.querySelector(".showUlProducts")) {
       showProductsList();
-      alert("hola")
+     
     }
    }
 

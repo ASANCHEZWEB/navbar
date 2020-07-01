@@ -3,30 +3,20 @@
 let showList = () => {
   document.querySelector(".listProducts").classList.toggle("showList");
   if (
-    document
-      .querySelector("nav>div:nth-child(2)>button>img")
-      .getAttribute("src") === "menu.svg"
+    document.querySelector("nav>div:nth-child(2)>button>img").getAttribute("src") === "menu.svg"
   ) {
-    document
-      .querySelector("nav>div:nth-child(2)>button>img")
-      .setAttribute("src", "closeMenu.png");
+    document.querySelector("nav>div:nth-child(2)>button>img").setAttribute("src", "closeMenu.png");
   } else {
-    document
-      .querySelector("nav>div:nth-child(2)>button>img")
-      .setAttribute("src", "menu.svg");
+    document.querySelector("nav>div:nth-child(2)>button>img").setAttribute("src", "menu.svg");
   }
 };
 
 //MOSTRAR LISTA DE PRODUCTOS
 let showProductsList = () => {
   if (document.querySelector(".ulProducts")) {
-    document
-      .querySelector(".ulProducts")
-      .setAttribute("class", "showUlProducts");
+    document.querySelector(".ulProducts").setAttribute("class", "showUlProducts");
   } else {
-    document
-      .querySelector(".showUlProducts")
-      .setAttribute("class", "ulProducts");
+    document.querySelector(".showUlProducts").setAttribute("class", "ulProducts");
   }
 };
 
@@ -54,7 +44,7 @@ let showVerduras = () => {
   }
 };
 
-//ocultar menu si se clickea un elemento del menu mobile
+//ocultar menu si se clickea un elemento del menu
 let arrayElements = [];
 [...document.querySelectorAll(".listProducts>li")].forEach((element) => {
   if (!element.querySelector("button")) {
@@ -85,5 +75,21 @@ for (i = 0; i < arrayElements.length; i++) {
   };
 }
 
+window.onclick = function(event){
+let mobileMenu = document.querySelector("nav > div:nth-child(2) > button").contains(event.target);
+let desktopMenu = document.querySelector("nav > div:nth-child(2) > ul > li:nth-child(2) > button").contains(event.target);
 
+
+
+  if (!mobileMenu && !desktopMenu){
+
+    if (document.querySelector(".showList")) {
+      showList();
+    }
+    if (document.querySelector(".showUlProducts")) {
+      showProductsList();
+    }
+   }
+
+ };
 

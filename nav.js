@@ -1,5 +1,4 @@
-//MOSTRAR MENÚ
-
+//MOSTRAR MENÚ mobile
 let showList = () => {
   document.querySelector(".listProducts").classList.toggle("showList");
   if (
@@ -11,7 +10,7 @@ let showList = () => {
   }
 };
 
-//MOSTRAR LISTA DE PRODUCTOS
+//MOSTRAR LISTA DE PRODUCTOS en desktop
 let showProductsList = () => {
   if (document.querySelector(".ulProducts")) {
     document.querySelector(".ulProducts").setAttribute("class", "showUlProducts");
@@ -20,7 +19,7 @@ let showProductsList = () => {
   }
 };
 
-//MOSTRAR LISTA DE FRUTAS
+//MOSTRAR LISTA DE FRUTAS (desktop y mobile)
 let showFruitsList = () => {
   if (document.querySelector(".showVerduras")) {
     document.querySelector(".showVerduras").setAttribute("class", "ulVerduras");
@@ -32,7 +31,7 @@ let showFruitsList = () => {
   }
 };
 
-//MOSTRAR LISTA DE VERDURAS
+//MOSTRAR LISTA DE VERDURAS(desktop y mobile)
 let showVerduras = () => {
   if (document.querySelector(".showfruits")) {
     document.querySelector(".showfruits").setAttribute("class", "ulFruits");
@@ -44,7 +43,7 @@ let showVerduras = () => {
   }
 };
 
-//ocultar menu si se clickea un elemento del menu
+//CERRAR MENÚ SI EL USUARIO HACE CLICK EN UN ELEMENTO DENTRO DEL MENÚ
 let arrayElements = [];
 [...document.querySelectorAll(".listProducts>li")].forEach((element) => {
   if (!element.querySelector("button")) {
@@ -75,24 +74,19 @@ for (i = 0; i < arrayElements.length; i++) {
     }
   };
 }
-
+// CERRAR MENU SI EL CLIENTE CLICKEA FUERA DEL MENÚ
 window.onclick = function(event){
 let mobileMenu = document.querySelector("nav > div:nth-child(2) > button").contains(event.target);
 let desktopMenu = document.querySelector("nav > div:nth-child(2) > ul > li:nth-child(2) > button").contains(event.target);
-
-
-
-  if (!mobileMenu && !desktopMenu){
-
+let menuFrutas = document.querySelector(".frutasListButton").contains(event.target);
+let menuVerduras = document.querySelector(".verdurasListButton").contains(event.target);
+  if (!mobileMenu && !desktopMenu && !menuFrutas && !menuVerduras){
     if (document.querySelector(".showList")) {
       showList();
-      
     }
     if (document.querySelector(".showUlProducts")) {
       showProductsList();
-     
     }
    }
-
  };
 
